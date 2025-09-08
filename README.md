@@ -83,17 +83,4 @@ Testing: Performance was validated on mid-range devices (iOS 17 simulator, Andro
 Known Limitations & Next Steps
 Limitations
 
-Deep Linking: Currently stubbed; only basic navigation to ImageViewerScreen is implemented. Full support for myapp://event/154770/image/:id requires additional parsing logic.
-Filters: The search/filter functionality is stubbed, lacking a UI for filtering by caption or author.
-Watermarking: Sharing/saving images lacks watermark support, as it’s stubbed in ImageViewerScreen.
-EXIF Reader: Limited to a fallback using expo-media-library due to the absence of a native module in the managed Expo workflow.
-Testing: Unit tests cover useImageList and ImageGridItem, but E2E testing (e.g., with Detox) is not implemented.
-
-Next Steps
-
-Implement deep linking with expo-linking to handle myapp://event/154770/image/:id in app/_layout.tsx.
-Add a search bar to HomeScreen for filtering images by caption/author using TextInput and state management.
-Integrate expo-image-manipulator for watermarking images before sharing/saving.
-Explore ejecting to a bare workflow or creating a custom native module for a robust EXIF reader.
-Set up Detox for E2E testing to cover navigation and image interactions.
-Optimize for low-end devices by reducing image resolution further or implementing lazy loading.
+Working Deep Linking , Share , Save , Favourites Please test it
